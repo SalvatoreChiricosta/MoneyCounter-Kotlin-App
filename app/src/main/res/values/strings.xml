@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Money Counter</string>
+    <string-array name="categorie">
+        <item>Abbonamento</item>
+        <item>Cultura</item>
+        <item>Shopping-Online</item>
+        <item>Spesa</item>
+        <item>Svago</item>
+        <item>Utenza</item>
+        <item>Versamento</item>
+        <item>Viaggi</item>
+    </string-array>
+</resources>
