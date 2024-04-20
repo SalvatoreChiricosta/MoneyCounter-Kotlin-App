@@ -1,4 +1,16 @@
 package com.example.appambienti.data
 
-data class Transactions(val label:String, val amount:Double, val category: String, val description:String) {
-}
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import java.io.Serializable
+
+@Entity(tableName = "transaction_table")
+data class Transactions(
+    @PrimaryKey(autoGenerate = true) val id: Int,
+    val label: String,
+    val amount: Double,
+    val category: String,
+    val description: String): Serializable{
+
+    }
+
