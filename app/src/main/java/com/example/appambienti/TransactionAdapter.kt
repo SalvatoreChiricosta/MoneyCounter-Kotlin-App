@@ -1,4 +1,4 @@
-package com.example.appambienti.data
+package com.example.appambienti
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appambienti.DetailedTransaction
-import com.example.appambienti.R
+import com.example.appambienti.data.Transactions
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class TransactionAdapter(private var transactions: List<Transactions>) :RecyclerView.Adapter<TransactionAdapter.TransactionHolder>() {
@@ -16,6 +18,8 @@ class TransactionAdapter(private var transactions: List<Transactions>) :Recycler
         val label :TextView = view.findViewById<TextView>(R.id.label)
         val amount :TextView = view.findViewById<TextView>(R.id.amount)
         val category: TextView = view.findViewById<TextView>(R.id.category)
+        val date: TextView = view.findViewById<TextView>(R.id.date)
+
 
     }
 
@@ -38,6 +42,10 @@ class TransactionAdapter(private var transactions: List<Transactions>) :Recycler
 
         holder.label.text = transaction.label
         holder.category.text = transaction.category
+
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        val formattedDate = dateFormat.format(Date(transaction.date))
+        holder.date.text =formattedDate
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context, DetailedTransaction::class.java)

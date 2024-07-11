@@ -44,6 +44,13 @@
             android:textSize="20sp"
             android:layout_marginEnd="12dp"
             android:text="Quantità" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="Data"
+            android:textSize="10sp"/>
 
     </LinearLayout>
 </LinearLayout>

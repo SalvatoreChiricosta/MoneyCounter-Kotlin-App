@@ -10,4 +10,15 @@
         <item>Versamento</item>
         <item>Viaggi</item>
     </string-array>
+    <string-array name="categorie_filter">
+        <item>Tutte</item>
+        <item>Abbonamento</item>
+        <item>Cultura</item>
+        <item>Shopping-Online</item>
+        <item>Spesa</item>
+        <item>Svago</item>
+        <item>Utenza</item>
+        <item>Versamento</item>
+        <item>Viaggi</item>
+    </string-array>
 </resources>

@@ -10,7 +10,8 @@ data class Transactions(
     val label: String,
     val amount: Double,
     val category: String,
-    val description: String): Serializable{
-
+    val description: String,
+    val date : Long /* ,
+   val position: String*/): Serializable{
     }
 

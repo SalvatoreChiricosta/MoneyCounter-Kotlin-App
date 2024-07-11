@@ -11,6 +11,8 @@ interface TransactionsDao {
     @Query(value = "SELECT* FROM transaction_table")
     fun getAll(): List<Transactions>
 
+    @Query("SELECT * FROM transaction_table WHERE category = :category ")
+    fun getTransactionsByCategory(category: String): List<Transactions>
     @Insert
     fun insertAll(vararg transaction: Transactions)
 

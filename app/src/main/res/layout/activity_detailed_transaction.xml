@@ -17,6 +17,17 @@
         app:layout_constraintTop_toTopOf="parent">
     </ImageButton>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteTransaction_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/delete_icon"
+        app:borderWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -26,6 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -114,6 +127,18 @@
                 android:textSize="24dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:textSize="20dp"
+            android:baselineAligned="false"
+            android:text="data"
+            tools:layout_editor_absoluteX="191dp"
+            tools:layout_editor_absoluteY="570dp">
+
+        </TextView>
 
     </LinearLayout>
 
@@ -131,5 +156,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

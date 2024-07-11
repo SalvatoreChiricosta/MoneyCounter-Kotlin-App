@@ -62,7 +62,7 @@ class AddTransactionActivity : AppCompatActivity() {
             else if(category.isEmpty())
                 categoryLayout.error="Inserisci un nome valido"
             else{
-                val transactions = Transactions(0, label, amount, category, description)
+                val transactions = Transactions(0, label, amount, category, description, System.currentTimeMillis())
                 insert(transactions)
             }
 
